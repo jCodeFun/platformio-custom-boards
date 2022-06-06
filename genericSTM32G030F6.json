@@ -1,0 +1,40 @@
+{
+  "build": {
+    "core": "stm32",
+    "cpu": "cortex-m0plus",
+    "extra_flags": "-DSTM32G0xx -DSTM32G030xx",
+    "f_cpu": "64000000L",
+    "mcu": "stm32g030f6",
+    "product_line": "STM32G030xx",
+    "variant": "STM32G0xx/G030F6P"
+  },
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "STM32G030XX",
+    "openocd_target": "stm32g0x",
+    "svd_path": "STM32G030.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube",
+    "libopencm3"
+  ],
+  "name": "GENERIC STM32GG030F6",
+  "upload": {
+    "maximum_ram_size": 8192,
+    "maximum_size": 32768,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "cmsis-dap",
+      "stlink",
+      "blackmagic",
+      "serial"
+    ]
+  },
+  "url": "https://www.st.com/resource/en/datasheet/stm32g030f6.pdf",
+  "vendor": "ST"
+}
